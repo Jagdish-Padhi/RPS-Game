@@ -1,0 +1,47 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+#headline {
+  border: 5px solid rgb(255, 125, 255);
+  background-color: rgb(0, 247, 255);
+  margin-left: 12%;
+  margin-right: 12%;
+  border-radius: 15px;
+  transition: border 0.2s ease-in; 
+  scale: 70%;
+}
+
+#headline:hover {
+    border: 8px solid rgb(255, 0, 251);
+    border-radius: 30px;
+    
+}
+
+#images {
+  size: 50%;
+  scale: 40%;
+  gap: 10%;
+}
+
+.img {
+    display: flex;
+    flex-direction: row;
+    
+  border: 10px solid greenyellow;
+  border-radius: 50%;
+  transition: border 0.2s ease;
+  height: 200px;
+  width: 200px;
+}
+
+ .img:hover {
+  border: 20px solid rgb(81, 255, 0);
+  border-radius: 50%;
+
+}
+
+ 
