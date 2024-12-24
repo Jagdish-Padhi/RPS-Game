@@ -1,36 +1,47 @@
-.container{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10%;
+  text-align: center;
 }
 
+@keyframes border{
+  from{
+    border:5px solid rgb(255, 66, 255);
+     
+  }to{
+   border:  5px solid rgb(110, 122, 255);
+    
+  }
+}
 
-#headline {
+#headline{
   border: 5px solid rgb(255, 125, 255);
   background-color: rgb(0, 247, 255);
-  margin-left: 12%;
-  margin-right: 12%;
+  height: fit-content;
+  width: fit-content;
+  padding: 1%;
+  line-height: 3rem;
   border-radius: 15px;
-  transition: border 0.2s ease-in; 
+  transition: border 0.2s ease-in;
   scale: 70%;
-}
-
-#headline:hover {
-    border: 8px solid rgb(255, 0, 251);
-    border-radius: 30px;
-    
+  font-family: "Reggae One", serif;
+  font-weight: 400;
+  font-style: normal;
+  animation: border 0.3s alternate-reverse infinite;
+  transition: 1s ease-in-out;
 }
 
 #images {
-  size: 50%;
   scale: 40%;
   gap: 10%;
 }
 
 .img {
-    display: flex;
-    flex-direction: row;
-    
+  display: flex;
+  flex-direction: row;
+
   border: 10px solid greenyellow;
   border-radius: 50%;
   transition: border 0.2s ease;
@@ -38,10 +49,49 @@
   width: 200px;
 }
 
- .img:hover {
-  border: 20px solid rgb(81, 255, 0);
-  border-radius: 50%;
-
+.img:hover {
+  background-color: aquamarine;
+  cursor: pointer;
+  scale: 115%;
 }
 
- 
+.score {
+  border: 2px solid rgb(0, 0, 150);
+  border-radius: 10px;
+  width: 130px;
+  background-color: rgb(255, 252, 220);
+}
+
+@keyframes color {
+  from{
+    color:red
+  }to{
+    color:darkblue
+  }
+  
+}
+#vs {
+  display: flex;
+  scale: 200%;
+  align-items: center;
+  font-family: "Reggae One", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(37, 0, 149);
+  animation: color 0.1s alternate-reverse infinite;
+}
+
+button {
+  margin-top: 1rem;
+  scale: 125%;
+  border-radius: 5px;
+  border: 1px solid rgb(0, 93, 103);
+  height: fit-content;
+  width: fit-content;
+  padding: 1%;
+  background-color: rgb(211, 245, 255);
+
+  font-family: "Iceland", serif;
+  font-weight: 400;
+  font-style: normal;
+}
