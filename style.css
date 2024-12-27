@@ -6,24 +6,36 @@
   text-align: center;
 }
 
-@keyframes border{
-  from{
-    border:5px solid rgb(255, 66, 255);
-     
-  }to{
-   border:  5px solid rgb(110, 122, 255);
-    
+#top-msg {
+  border: 2px solid darkblue;
+  background-color: rgb(229, 221, 255);
+  width: fit-content;
+  padding: 5px;
+  border-radius: 11px;
+  font-family: "Reggae One", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  animation: color 0.5s alternate-reverse infinite;
+}
+
+@keyframes border {
+  from {
+    border: 5px solid rgb(255, 66, 255);
+  }
+  to {
+    border: 5px solid rgb(110, 122, 255);
   }
 }
 
-#headline{
+#headline {
   border: 5px solid rgb(255, 125, 255);
   background-color: rgb(0, 247, 255);
   height: fit-content;
   width: fit-content;
   padding: 1%;
   line-height: 3rem;
-  border-radius: 15px;
+  border-radius: 18px;
   transition: border 0.2s ease-in;
   scale: 70%;
   font-family: "Reggae One", serif;
@@ -34,8 +46,10 @@
 }
 
 #images {
-  scale: 40%;
+  scale: 50%;
   gap: 10%;
+  height: fit-content;
+  transform-origin: 1000py;
 }
 
 .img {
@@ -45,8 +59,8 @@
   border: 10px solid greenyellow;
   border-radius: 50%;
   transition: border 0.2s ease;
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
 }
 
 .img:hover {
@@ -57,18 +71,19 @@
 
 .score {
   border: 2px solid rgb(0, 0, 150);
-  border-radius: 10px;
-  width: 130px;
+  border-radius: 11px;
+  width: 100px;
+  height: 80px;
   background-color: rgb(255, 252, 220);
 }
 
 @keyframes color {
-  from{
-    color:red
-  }to{
-    color:darkblue
+  from {
+    color: red;
   }
-  
+  to {
+    color: darkblue;
+  }
 }
 #vs {
   display: flex;
@@ -78,20 +93,21 @@
   font-weight: 400;
   font-style: normal;
   color: rgb(37, 0, 149);
-  animation: color 0.1s alternate-reverse infinite;
+  animation: color 0.07s alternate-reverse infinite;
 }
 
-button {
-  margin-top: 1rem;
+#below-msg {
+  margin-bottom: 2rem;
   scale: 125%;
-  border-radius: 5px;
-  border: 1px solid rgb(0, 93, 103);
+  border-radius: 11px;
+  border: 1px solid rgb(0, 15, 131);
   height: fit-content;
   width: fit-content;
   padding: 1%;
   background-color: rgb(211, 245, 255);
 
-  font-family: "Iceland", serif;
+  font-family: "Reggae One", serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 12px;
 }

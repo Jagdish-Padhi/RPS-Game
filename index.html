@@ -16,12 +16,18 @@
 
 <body>
     <div class="container">
-        <h2 id="headline">Rock-Paper-Sessior Game</h2>
+        <h2 id="headline">
+            Rock-Paper-Sessior Game</h2>
     </div>
 
+    <div class="container" >
+        <p id="top-msg"><b>😊Click on icons below!</b></p>
+    </div>
+
+
     <div class="container" id="images">
-        <div id="Rock">
-            <img class="img" src="Screenshot 2024-12-20 084548.png" alt="please wait">
+        <div >
+            <img class="img" id="rock"  src="Screenshot 2024-12-20 084548.png" alt="please wait">
             <p>
             <h1>
                 Rock
@@ -29,16 +35,16 @@
             </p>
         </div>
 
-        <div id="Paper">
-            <img class="img" src="Screenshot 2024-12-20 084626.png" alt="please wait">
+        <div >
+            <img class="img" id="paper"  src="Screenshot 2024-12-20 084626.png" alt="please wait">
             <p>
             <h1>
                 Paper
             </h1>
             </p>
         </div>
-        <div id="Sessior">
-            <img class="img" src="Screenshot 2024-12-20 084559.png" alt="please wait">
+        <div >
+            <img class="img"  id="scissor" src="Screenshot 2024-12-20 084559.png" alt="please wait">
             <p>
             <h1>
                 Sessior
@@ -46,6 +52,13 @@
             </p>
         </div>
     </div>
+
+    <div class="container">
+        <div id="below-msg">
+            <b> READY ? </b>
+        </div>
+    </div>
+
 
     <div class="container">
         <div class="score">
@@ -58,21 +71,14 @@
         </div>
 
         <div class="score">
-            <p><b>🤖Computer🤖</b></p>
-            <p id="comp_score">0</p>
+            <p><b>🤖AI🤖</b></p>
+            <p id="ai_score">0</p>
         </div>
     </div>
 
-    <div class="container">
-        <button>
-            <b> Pick your move</b>
-        </button>
-    </div>
+    
 
-
-
-
-
+    <script src="script.js" defer></script>
 </body>
 
 </html>
