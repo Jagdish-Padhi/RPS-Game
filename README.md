@@ -1,4 +1,4 @@
-# Stone Paper Scissors Game
+# 🌟Stone Paper Scissors Game🌟
 
 😊Welcome to the **Stone Paper Scissors** game, a simple and fun implementation of the classic hand game using JavaScript, HTML, and CSS!
 
